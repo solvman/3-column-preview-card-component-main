@@ -1,3 +1,14 @@
+/* Global variables */
+
+:root {
+  --clr-orange: hsl(31, 77%, 52%);
+  --clr-cyan: hsl(184, 100%, 22%);
+  --clr-green: hsl(179, 100%, 13%);
+
+  --ff-heading: "Big Shoulders Display", sans-serif;
+  --ff-base: "Lexend Deca", sans-serif;
+}
+
 /* CSS Reset */
 
 *,
@@ -38,4 +49,10 @@ h6 {
 #root,
 #__next {
   isolation: isolate;
+}
+
+/* Styles */
+body {
+  font-family: var(--ff-base);
+  font-size: 0.9375rem;
 }
