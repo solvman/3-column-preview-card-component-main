@@ -85,6 +85,13 @@ body {
   overflow: hidden;
 }
 
+.card__col {
+  padding: 3.225em;
+  display: grid;
+  justify-items: left;
+  gap: 1.125em;
+}
+
 .card__col--orange {
   background-color: var(--clr-orange);
 }
@@ -97,13 +104,14 @@ body {
   background-color: var(--clr-cyan);
 }
 
-.card__col {
-  padding: 3em;
-}
-
 .card__col__title {
   color: var(--clr-dirty-white);
   text-transform: uppercase;
   font-family: var(--ff-heading);
   font-size: 2.5rem;
+  margin-top: 0.225em;
+}
+
+.card__col button {
+  margin-top: 0.6em;
 }
