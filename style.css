@@ -50,6 +50,9 @@ body {
   color: var(--clr-white);
   font-family: var(--ff-base);
   font-size: 0.9375rem;
+  height: initial;
+  display: grid;
+  place-content: center;
 }
 
 /* Button */
@@ -63,6 +66,7 @@ body {
   border: 1px solid var(--clr-dirty-white);
   padding: 0.7em 2.125em;
   transition: all 0.4s;
+  cursor: pointer;
 }
 
 .button:is(:hover, :focus) {
@@ -89,9 +93,14 @@ body {
 /* Card styles */
 
 .card {
+  --card-button-top-margin: 0.6em;
   margin: 1.5em;
   border-radius: 0.5em;
   overflow: hidden;
+  display: grid;
+  place-content: center;
+  min-width: 327px;
+  max-width: 920px;
 }
 
 .card__col {
@@ -122,5 +131,17 @@ body {
 }
 
 .card__col button {
-  margin-top: 0.6em;
+  margin-top: var(--card-button-top-margin);
+}
+
+@media (min-width: 800px) {
+  body {
+    height: 100vh;
+    place-content: center;
+  }
+
+  .card {
+    --card-button-top-margin: 4.5em;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
