@@ -60,7 +60,16 @@ body {
   text-decoration: none;
   border: none;
   border-radius: 1.5625em;
-  padding: 0.7625em 2.125em;
+  border: 1px solid var(--clr-dirty-white);
+  padding: 0.7em 2.125em;
+  transition: all 0.4s;
+}
+
+.button:is(:hover, :focus) {
+  outline: none;
+  color: var(--clr-dirty-white);
+  border: 1px solid var(--clr-dirty-white);
+  background-color: transparent;
 }
 
 /* Utility */
