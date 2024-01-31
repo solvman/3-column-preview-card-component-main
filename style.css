@@ -61,7 +61,6 @@ body {
   display: block;
   background-color: var(--clr-dirty-white);
   text-decoration: none;
-  border: none;
   border-radius: 1.5625em;
   border: 1px solid var(--clr-dirty-white);
   padding: 0.7em 2.125em;
