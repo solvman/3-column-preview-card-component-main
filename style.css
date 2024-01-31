@@ -71,7 +71,7 @@ body {
 .button:is(:hover, :focus) {
   outline: none;
   color: var(--clr-dirty-white);
-  border: 1px solid var(--clr-dirty-white);
+  /* border: 1px solid var(--clr-dirty-white); */
   background-color: transparent;
 }
 
