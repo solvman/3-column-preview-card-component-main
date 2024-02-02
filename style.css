@@ -40,10 +40,6 @@ p,
 h1 {
   overflow-wrap: break-word;
 }
-#root,
-#__next {
-  isolation: isolate;
-}
 
 /* Styles */
 body {
@@ -88,6 +84,18 @@ main {
 
 .cyan {
   color: var(--clr-cyan);
+}
+
+..visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 /* Card styles */
